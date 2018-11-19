@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:400,500");
+
+$open-sans: "Open Sans", sans-serif;
+$roboto: "Roboto", sans-serif;
+
+//colors
+$c-text: #4d4d4d;
+$c-bg-color: #f7ede2;
+$c-bg-alt: #fff;
+$c-outline: #b5b5b5;
+$c-green: #84a59d;
+$c-blue: #2d4e64;
+$c-yellow: #f6bd60;
+$c-pink: #f5cac3;
+$c-red: #f28481;
+
+body {
+  background: $c-bg-color;
+  color: $c-text;
+  font-family: $open-sans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("/images/stripes.png");
+  background-repeat: no-repeat;
+}
+
+.react-datepicker {
+  font-family: $open-sans !important;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: $c-yellow !important;
+}
+
+@import "app";
+@import "icons";
