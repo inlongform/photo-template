@@ -1,0 +1,25 @@
+.card {
+  @include shadow;
+  margin-bottom: 15px;
+  .card-header {
+    display: flex;
+    border-bottom: none;
+
+    h4 {
+      font-family: $roboto;
+      color: $c-blue;
+    }
+
+    .fa-cog {
+      color: $c-blue;
+    }
+  }
+
+  .btn-link {
+    color: $c-red;
+    float: right;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

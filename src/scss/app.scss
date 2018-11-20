@@ -1,22 +1,28 @@
-nav.navbar {
-  background: rgba(255, 255, 255, 0.7);
-  border-bottom: 1px solid $c-outline;
+.react-datepicker {
+  font-family: $open-sans !important;
+}
 
-  .navbar-brand {
-    width: 160px;
-    padding: 10px 0 10px 45px;
-  }
-  .login-container {
-    border-left: 1px solid $c-outline;
-    padding-left: 15px;
-  }
-  form {
-    > div,
-    > svg {
-      label {
-        margin-right: 10px;
-      }
-      margin-right: 20px;
-    }
+.react-datepicker__day--keyboard-selected {
+  background-color: $c-yellow !important;
+}
+
+.sep {
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid $c-outline;
+  margin: 0.5rem 0;
+}
+
+#settings {
+  margin-top: 50px;
+  @import "settings";
+}
+
+#results {
+  margin-top: 50px;
+  .row {
+    @import "card";
   }
 }
+@import "navbar";
+@import "icons";

@@ -1,0 +1,22 @@
+nav.navbar {
+  background: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid $c-outline;
+
+  .navbar-brand {
+    width: 160px;
+    padding: 10px 0 10px 45px;
+  }
+  .login-container {
+    border-left: 1px solid $c-outline;
+    padding-left: 15px;
+  }
+  form {
+    > div,
+    > svg {
+      label {
+        margin-right: 10px;
+      }
+      margin-right: 20px;
+    }
+  }
+}
