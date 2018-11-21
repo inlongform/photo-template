@@ -1,7 +1,20 @@
 .fa-search,
 .fa-user-circle,
-.fa-cog {
+.fa-cog,
+.fa-twitter,
+.fa-facebook,
+.fa-google,
+.fa-times {
   font-size: 24px;
+  color: $c-text;
+}
+
+.fa-tags {
+  color: $c-text;
+}
+
+.fa-calendar-alt {
+  font-size: 20px;
   color: $c-text;
 }
 

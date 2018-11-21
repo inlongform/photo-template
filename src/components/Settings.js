@@ -12,7 +12,7 @@ import {
   Label
 } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCog } from "@fortawesome/free-solid-svg-icons";
+
 import EditPosts from "./EditPosts";
 
 class Settings extends Component {
@@ -23,7 +23,7 @@ class Settings extends Component {
           <Col xl="3" lg="3" md="12">
             <Card>
               <CardHeader className="pb-0">
-                <FontAwesomeIcon icon={faCog} className="mr-2" />
+                <FontAwesomeIcon icon="cog" className="mr-2" />
                 <h4>Settings</h4>
               </CardHeader>
               <CardBody className="pt-0">
@@ -40,12 +40,13 @@ class Settings extends Component {
               </CardBody>
             </Card>
           </Col>
-          <Col xl="9" lg="9" md="12">
+          <Col xl="9" lg="9" md="12" id="myposts">
             <Card>
-              <CardHeader>
+              <CardHeader className="pb-0">
                 <h4>My Posts</h4>
               </CardHeader>
-              <CardBody>
+              <CardBody className="pt-0">
+                <div className="sep" />
                 <EditPosts />
               </CardBody>
             </Card>

@@ -8,18 +8,28 @@
     h4 {
       font-family: $roboto;
       color: $c-blue;
+      line-height: 24px;
     }
 
     .fa-cog {
       color: $c-blue;
     }
   }
+}
 
-  .btn-link {
+#myposts {
+  thead td {
+    font-family: $roboto;
+    font-weight: 500;
+    border: 0;
+  }
+  tbody td {
+    vertical-align: middle;
+  }
+  .fa-trash-alt {
     color: $c-red;
-    float: right;
-    &:hover {
-      text-decoration: underline;
-    }
+  }
+  img {
+    width: 150px;
   }
 }

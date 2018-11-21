@@ -13,9 +13,40 @@
   margin: 0.5rem 0;
 }
 
+.form-control:focus {
+  box-shadow: none;
+  border-color: $c-yellow;
+}
+
+.heavy-open {
+  font-family: $open-sans;
+  font-weight: 600;
+}
+
+.heavy-roboto {
+  font-family: $roboto;
+  font-weight: 500;
+}
+
+.btn-link {
+  color: $c-red;
+  float: right;
+  &:hover {
+    color: $c-red;
+    text-decoration: underline;
+  }
+}
+
+@import "addpost";
+
 #settings {
   margin-top: 50px;
   @import "settings";
+}
+
+#full {
+  margin-top: 50px;
+  @import "full";
 }
 
 #results {
