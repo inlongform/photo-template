@@ -10,6 +10,12 @@ const masonryOptions = {
 const imagesLoadedOptions = { background: "" };
 
 class Results extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loaded: false
+    };
+  }
   componentWillMount() {}
 
   render() {
@@ -21,7 +27,7 @@ class Results extends Component {
     return (
       <Container id="results">
         <Row>
-          <Col>
+          <Col className={!this.state.loaded ? "d-none" : "d-block"}>
             <Masonry
               className={"my-gallery-class"} // default ''
               elementType={"div"} // default 'div'
@@ -29,7 +35,7 @@ class Results extends Component {
               disableImagesLoaded={false} // default false
               updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
               // imagesLoadedOptions={} // default {}
-              onImagesLoaded={this.handleImagesLoaded}
+              onImagesLoaded={() => this.setState({ loaded: true })}
             >
               {items}
             </Masonry>

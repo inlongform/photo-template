@@ -1,5 +1,5 @@
 #addpost {
-  position: absolute;
+  position: fixed;
   width: 25%;
   background: $c-bg-color;
   right: 0;
@@ -9,7 +9,7 @@
   @include addpostShadow;
 
   &.closed {
-    right: -25%;
+    right: -30%;
   }
   @media (max-width: 992px) {
     width: 35%;
@@ -35,9 +35,14 @@
       width: 100%;
     }
     .add-header {
-      h4 {
+      h5 {
         color: $c-blue;
         line-height: 24px;
+      }
+
+      .fa-cog,
+      .close {
+        color: $c-blue;
       }
 
       display: flex;

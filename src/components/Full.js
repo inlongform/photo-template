@@ -27,7 +27,7 @@ class Full extends Component {
                       />
                     </li>
                     <li>
-                      <h6 className="heavy-open">truckules</h6>
+                      <h6 className="heavy">truckules</h6>
                     </li>
                   </ul>
                   <ul className="dtime">
@@ -42,19 +42,25 @@ class Full extends Component {
                 <div className="social">
                   <ul>
                     <li>
-                      <FontAwesomeIcon icon={["fab", "twitter"]} />
+                      <a href="">
+                        <FontAwesomeIcon icon={["fab", "twitter"]} />
+                      </a>
                     </li>
                     <li>
-                      <FontAwesomeIcon icon={["fab", "facebook"]} />
+                      <a href="">
+                        <FontAwesomeIcon icon={["fab", "facebook"]} />
+                      </a>
                     </li>
                     <li>
-                      <FontAwesomeIcon icon={["fab", "google"]} />
+                      <a href="">
+                        <FontAwesomeIcon icon={["fab", "google"]} />
+                      </a>
                     </li>
                   </ul>
                 </div>
               </CardHeader>
               <CardBody className="pt-0">
-                <img src="/images/full.jpg" />
+                <img src="/images/full.jpg" alt="img" />
               </CardBody>
               <CardFooter>
                 <div className="tags mb-3">

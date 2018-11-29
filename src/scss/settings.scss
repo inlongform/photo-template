@@ -5,8 +5,7 @@
     display: flex;
     border-bottom: none;
 
-    h4 {
-      font-family: $roboto;
+    h5 {
       color: $c-blue;
       line-height: 24px;
     }
@@ -19,7 +18,6 @@
 
 #myposts {
   thead td {
-    font-family: $roboto;
     font-weight: 500;
     border: 0;
   }

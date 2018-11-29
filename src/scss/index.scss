@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:400,500");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500");
 
-$open-sans: "Open Sans", sans-serif;
-$roboto: "Roboto", sans-serif;
+$poppins: "Poppins", sans-serif;
 
 //colors
 $c-text: #4d4d4d;
-$c-bg-color: #f7ede2;
+$c-bg-color: #eaf2ef;
 $c-bg-alt: #fff;
 $c-outline: #b5b5b5;
 $c-green: #84a59d;
@@ -26,15 +25,19 @@ $c-red: #f28481;
   box-shadow: -3px 5px 18px 0px rgba(0, 0, 0, 0.2);
 }
 
+h6 {
+  font-size: 14px;
+}
+
 body {
   background: $c-bg-color;
   color: $c-text;
-  font-family: $open-sans;
+  font-family: $poppins;
+  font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("/images/stripes.png");
   background-repeat: no-repeat;
-  overflow-x: hidden;
 }
 
 @import "app";

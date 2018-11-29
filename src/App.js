@@ -39,12 +39,12 @@ class App extends Component {
     return (
       <Fragment>
         <PopOver showModal={false} />
-        <AddPost />
         <TopNav />
         <Container fluid={true} id="main">
+          <AddPost showMenu={false} />
           {/* <Results /> */}
-          <Settings />
-          {/* <Full /> */}
+          {/* <Settings /> */}
+          <Full />
         </Container>
       </Fragment>
     );

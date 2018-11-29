@@ -6,7 +6,7 @@ class AddPost extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
+      isOpen: this.props.showMenu
     };
 
     this.togglePanel = this.togglePanel.bind(this);
@@ -21,10 +21,10 @@ class AddPost extends Component {
 
   render() {
     return (
-      <div id="addpost" className={this.state.isOpen ? "closed" : null}>
+      <div id="addpost" className={!this.state.isOpen ? "closed" : null}>
         <div className="post-inner">
           <div className="add-header">
-            <h4 className="heavy-roboto">Add Post</h4>
+            <h5 className="heavy">Add Post</h5>
             <div>
               <a href="#">
                 <FontAwesomeIcon icon="cog" className="mr-2" />
@@ -40,7 +40,7 @@ class AddPost extends Component {
             </div>
           </div>
           <div className="sep" />
-          <Label className="heavy-open mt-3">Upload</Label>
+          <Label className="heavy mt-3">Upload</Label>
           <FormGroup className="mb-4">
             <Input
               type="file"
@@ -49,7 +49,7 @@ class AddPost extends Component {
               name="chooseFile"
               aria-describedby="inputGroupFileAddon"
             />
-
+            {/* <Input /> */}
             <Label className="custom-file-label" for="chooseFile">
               filename.jpg
             </Label>
@@ -58,13 +58,13 @@ class AddPost extends Component {
             <img src="/images/thumb.jpg" />
           </FormGroup>
           <FormGroup className="mb-4">
-            <Label className="heavy-open">
+            <Label className="heavy">
               Tags <small>(1 tag required)</small>
             </Label>
             <Input />
           </FormGroup>
           <FormGroup className="mt-3">
-            <Label className="heavy-open">
+            <Label className="heavy">
               Caption <small>(optional)</small>
             </Label>
             <Input type="textarea" />

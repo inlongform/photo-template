@@ -24,7 +24,7 @@ class Settings extends Component {
             <Card>
               <CardHeader className="pb-0">
                 <FontAwesomeIcon icon="cog" className="mr-2" />
-                <h4>Settings</h4>
+                <h5>Settings</h5>
               </CardHeader>
               <CardBody className="pt-0">
                 <div className="sep" />
@@ -43,7 +43,7 @@ class Settings extends Component {
           <Col xl="9" lg="9" md="12" id="myposts">
             <Card>
               <CardHeader className="pb-0">
-                <h4>My Posts</h4>
+                <h5>My Posts</h5>
               </CardHeader>
               <CardBody className="pt-0">
                 <div className="sep" />

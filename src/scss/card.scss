@@ -7,12 +7,16 @@
     display: flex;
     .card-title {
       color: $c-blue;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .card-subtitle {
+      font-size: 14px;
     }
 
     .user-icon {
       width: 35px;
       height: 35px;
-      margin-top: 10px;
       margin-right: 10px;
     }
   }
