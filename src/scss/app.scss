@@ -2,6 +2,10 @@
   overflow-x: hidden;
 }
 
+.react-datepicker {
+  font-family: $poppins !important;
+}
+
 .react-datepicker__day--keyboard-selected {
   background-color: $c-yellow !important;
 }
