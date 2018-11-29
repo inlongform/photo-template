@@ -6,6 +6,7 @@ import Settings from "./components/Settings";
 import Full from "./components/Full";
 import AddPost from "./components/AddPost";
 import PopOver from "./components/PopOver";
+import Notifications from "./components/Notifications";
 
 import {
   faCalendarAlt,
@@ -38,6 +39,11 @@ class App extends Component {
   render() {
     return (
       <Fragment>
+        <Notifications
+          type="info"
+          message="this is the message"
+          title="this is the title"
+        />
         <PopOver showModal={false} />
         <TopNav />
         <Container fluid={true} id="main">

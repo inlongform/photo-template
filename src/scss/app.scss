@@ -5,8 +5,10 @@
 .react-datepicker {
   font-family: $poppins !important;
 }
-
-.react-datepicker__day--keyboard-selected {
+.react-datepicker__day--selected {
+  background-color: $c-green !important;
+}
+.react-datepicker__day--selected:hover {
   background-color: $c-yellow !important;
 }
 

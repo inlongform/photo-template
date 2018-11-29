@@ -7,7 +7,7 @@ const masonryOptions = {
   transitionDuration: 0
 };
 
-const imagesLoadedOptions = { background: "" };
+// const imagesLoadedOptions = { background: "" };
 
 class Results extends Component {
   constructor(props) {

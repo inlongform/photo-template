@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { Modal, ModalHeader, ModalFooter, Button } from "reactstrap";
 
 const PopOver = props => {
