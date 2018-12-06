@@ -2,6 +2,7 @@
   "name": "photo-template",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://inlongform.com/fotobomb",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.8",
     "@fortawesome/free-brands-svg-icons": "^5.5.0",
@@ -11,6 +12,7 @@
     "bootstrap": "^4.1.3",
     "moment": "^2.22.2",
     "node-sass": "^4.10.0",
+    "query-string": "^6.2.0",
     "react": "^16.6.3",
     "react-datepicker": "^1.8.0",
     "react-dom": "^16.6.3",

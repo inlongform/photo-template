@@ -21,10 +21,7 @@ class Full extends Component {
                 <div className="user-info">
                   <ul>
                     <li>
-                      <img
-                        src="/images/avatar.jpg"
-                        className="rounded-circle"
-                      />
+                      <img src="images/avatar.jpg" className="rounded-circle" />
                     </li>
                     <li>
                       <h6 className="heavy">truckules</h6>
@@ -60,7 +57,7 @@ class Full extends Component {
                 </div>
               </CardHeader>
               <CardBody className="pt-0">
-                <img src="/images/full.jpg" alt="img" />
+                <img src="images/full.jpg" alt="img" />
               </CardBody>
               <CardFooter>
                 <div className="tags mb-3">

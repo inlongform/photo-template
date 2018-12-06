@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Container } from "reactstrap";
+import queryString from "query-string";
 import TopNav from "./components/TopNav";
 import Results from "./components/Results";
 import Settings from "./components/Settings";
@@ -36,7 +37,52 @@ class App extends Component {
       faTimes
     );
   }
+
+  renderComp() {
+    const page = queryString.parse(document.location.search);
+
+    if (page && page.show === "full") {
+      return (
+        <Fragment>
+          <TopNav />
+          <Container fluid={true} id="main">
+            <Full />
+          </Container>
+        </Fragment>
+      );
+    } else if (page.show === "upload") {
+      return (
+        <Fragment>
+          <AddPost showMenu={true} />
+          <TopNav />
+          <Container fluid={true} id="main">
+            <Results />
+          </Container>
+        </Fragment>
+      );
+    } else if (page.show === "settings") {
+      return (
+        <Fragment>
+          <TopNav />
+          <Container fluid={true} id="main">
+            <Settings />
+          </Container>
+        </Fragment>
+      );
+    } else {
+      return (
+        <Fragment>
+          <TopNav />
+          <Container fluid={true} id="main">
+            <Results />
+          </Container>
+        </Fragment>
+      );
+    }
+  }
   render() {
+    this.renderComp();
+
     return (
       <Fragment>
         <Notifications
@@ -45,13 +91,8 @@ class App extends Component {
           title="this is the title"
         />
         <PopOver showModal={false} />
-        <TopNav />
-        <Container fluid={true} id="main">
-          <AddPost showMenu={false} />
-          {/* <Results /> */}
-          {/* <Settings /> */}
-          <Full />
-        </Container>
+
+        {this.renderComp()}
       </Fragment>
     );
   }

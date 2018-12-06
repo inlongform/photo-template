@@ -10,9 +10,9 @@ import {
 } from "reactstrap";
 
 const ImgItem = props => {
-  let thumb = "/images/thumb.jpg";
+  let thumb = "images/thumb.jpg";
   if (props.index === 2 || props.index === 4 || props.index === 6) {
-    thumb = "/images/portrait.jpg";
+    thumb = "images/portrait.jpg";
   }
 
   return (
@@ -22,7 +22,7 @@ const ImgItem = props => {
         <CardBody className="p-2">
           <div>
             <img
-              src="/images/avatar.jpg"
+              src="images/avatar.jpg"
               alt="avatar"
               className="rounded-circle user-icon"
             />

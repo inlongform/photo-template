@@ -16,7 +16,7 @@ const EditPosts = () => {
       <tbody>
         <tr>
           <td>
-            <img src="/images/thumb.jpg" alt="img" />
+            <img src="images/thumb.jpg" alt="img" />
           </td>
           <td>Nov 3, 2018 -12:30 AM</td>
           <td>#nyc, #dpggie</td>
@@ -28,7 +28,7 @@ const EditPosts = () => {
         </tr>
         <tr>
           <td>
-            <img src="/images/thumb.jpg" />
+            <img src="images/thumb.jpg" />
           </td>
           <td>Nov 3, 2018 -12:30 AM</td>
           <td>#nyc, #dpggie</td>

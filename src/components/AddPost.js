@@ -55,7 +55,7 @@ class AddPost extends Component {
             </Label>
           </FormGroup>
           <FormGroup className="mb-4">
-            <img src="/images/thumb.jpg" />
+            <img src="images/thumb.jpg" />
           </FormGroup>
           <FormGroup className="mb-4">
             <Label className="heavy">

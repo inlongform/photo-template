@@ -1,7 +1,3 @@
-#main {
-  overflow-x: hidden;
-}
-
 .react-datepicker {
   font-family: $poppins !important;
 }
@@ -40,18 +36,19 @@
 
 @import "addpost";
 @import "modal";
+
+#main {
+  margin-top: 100px;
+}
 #settings {
-  margin-top: 50px;
   @import "settings";
 }
 
 #full {
-  margin-top: 50px;
   @import "full";
 }
 
 #results {
-  margin-top: 50px;
   .row {
     @import "card";
   }
