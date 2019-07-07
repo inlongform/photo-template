@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 import {
   Container,
@@ -21,7 +22,11 @@ class Full extends Component {
                 <div className="user-info">
                   <ul>
                     <li>
-                      <img src="images/avatar.jpg" className="rounded-circle" />
+                      <img
+                        src="images/avatar.jpg"
+                        className="rounded-circle"
+                        alt="avatar"
+                      />
                     </li>
                     <li>
                       <h6 className="heavy">truckules</h6>

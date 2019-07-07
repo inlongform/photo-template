@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 import { Input, Button, FormGroup, Label } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -55,7 +56,7 @@ class AddPost extends Component {
             </Label>
           </FormGroup>
           <FormGroup className="mb-4">
-            <img src="images/thumb.jpg" />
+            <img src="images/thumb.jpg" alt="thumb" />
           </FormGroup>
           <FormGroup className="mb-4">
             <Label className="heavy">

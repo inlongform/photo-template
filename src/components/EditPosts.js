@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import { Table } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -28,7 +29,7 @@ const EditPosts = () => {
         </tr>
         <tr>
           <td>
-            <img src="images/thumb.jpg" />
+            <img src="images/thumb.jpg" alt="thumb" />
           </td>
           <td>Nov 3, 2018 -12:30 AM</td>
           <td>#nyc, #dpggie</td>
